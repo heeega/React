@@ -14,7 +14,7 @@ const Header = () => {
           <Link to="/user/login">로그인 |</Link>
           <Link to="/user/register">회원가입 |</Link>
           <Link to="/admin/">관리자 |</Link>
-          <Link to="/">고객센터</Link>
+          <Link to="#">고객센터</Link>
         </p>
         <img src="/images/head_txt_img.png" alt="3만원 이상 무료배송" />
 

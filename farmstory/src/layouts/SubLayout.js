@@ -1,33 +1,33 @@
 import React from "react";
+import Aside from "../components/common/Aside";
+import useCates from "../hooks/useCates";
+import titleLabels from "../data/titleLabels.json";
 
 const SubLayout = ({ children }) => {
+  const [cate1, cate2] = useCates();
+
   return (
     <div id="sub">
       <div>
-        <img src="/images/sub_top_tit1.png" alt="INTRODUCTION" />
+        <img src={`../images/sub_top_${cate1}.png`} alt="INTRODUCTION" />
       </div>
-      <section class="introduction">
-        <aside>
-          <img src="/images/sub_aside_cate1_tit.png" alt="팜스토리 소개" />
-
-          <ul class="lnb">
-            <li class="on">
-              <a href="./hello.html">인사말</a>
-            </li>
-            <li>
-              <a href="./direction.html">찾아오시는 길</a>
-            </li>
-          </ul>
-        </aside>
-        <article>
+      <section className={cate1}>
+        <Aside />
+        <article className={cate2}>
           <nav>
-            <img src="/images/sub_nav_tit_cate1_tit1.png" alt="인사말" />
+            <img
+              src={`../images/sub_nav_tit_${cate1}_${cate2}.png`}
+              alt={titleLabels[cate2]}
+            />
             <p>
-              HOME {">"} 팜스토리소개 {">"} <em>인사말</em>
+              HOME {">"} {titleLabels[cate1]} {">"}{" "}
+              <em>{titleLabels[cate2]}</em>
             </p>
           </nav>
 
+          {/* 내용 시작 */}
           {children}
+          {/* 내용 끝 */}
         </article>
       </section>
     </div>

@@ -6,11 +6,6 @@ import DefaultLayout from "../../layouts/DefaultLayout";
 
 const MainPage = () => {
   return (
-    // <div id="container">
-    //   <Header />
-    //   <Main />
-    //   <Footer />
-    // </div>
     <DefaultLayout>
       <Main />
     </DefaultLayout>

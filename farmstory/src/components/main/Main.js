@@ -10,9 +10,13 @@ const Main = () => {
     <>
       <main>
         <Slider />
+
         <Best />
+
         <Quick />
+
         <Latest />
+
         <Info />
       </main>
     </>

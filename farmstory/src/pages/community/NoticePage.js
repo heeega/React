@@ -1,7 +1,9 @@
-import React from "react";
+import React from 'react'
 
 const NoticePage = () => {
-  return <div>NoticePage</div>;
-};
+  return (
+    <div>NoticePage</div>
+  )
+}
 
-export default NoticePage;
+export default NoticePage

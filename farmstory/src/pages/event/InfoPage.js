@@ -1,7 +1,9 @@
-import React from "react";
+import React from 'react'
 
 const InfoPage = () => {
-  return <div>InfoPage</div>;
-};
+  return (
+    <div>InfoPage</div>
+  )
+}
 
-export default InfoPage;
+export default InfoPage

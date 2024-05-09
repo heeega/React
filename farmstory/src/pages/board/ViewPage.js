@@ -2,7 +2,7 @@ import React from "react";
 import DefaultLayout from "../../layouts/DefaultLayout";
 import SubLayout from "../../layouts/SubLayout";
 
-const GrowPage = () => {
+const ViewPage = () => {
   return (
     <DefaultLayout>
       <SubLayout></SubLayout>
@@ -10,4 +10,4 @@ const GrowPage = () => {
   );
 };
 
-export default GrowPage;
+export default ViewPage;
