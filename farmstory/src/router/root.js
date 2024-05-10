@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { Navigate, createBrowserRouter } from "react-router-dom";
 import MainPage from "../pages/main/MainPage";
 import HelloPage from "../pages/introduction/HelloPage";
 import DircetionPage from "../pages/introduction/DircetionPage";
@@ -33,7 +33,7 @@ const root = createBrowserRouter([
   { path: "/user/login", element: <LoginPage /> },
   { path: "/user/terms", element: <TermsPage /> },
   { path: "/user/register", element: <RegisterPage /> },
-  { path: "/user/logout", element: <LogoutPage /> },
+  { path: "/user/logout", element: <Navigate replace to="/" /> },
 
   { path: "/board/list", element: <BoardListPage /> },
   { path: "/board/view", element: <BoardViewPage /> },
